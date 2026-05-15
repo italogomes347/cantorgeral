@@ -1,0 +1,178 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.topo{
+    height:100vh;
+    background:url('https://cdn.cgn.inf.br/fotos-cgn/2021/05/21004509/mc-kevin-2.jpg') center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+}
+
+.topo::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.7);
+}
+
+.conteudo{
+    position:relative;
+    z-index:2;
+    width:80%;
+}
+
+.topo h1{
+    font-size:70px;
+    margin-bottom:15px;
+    letter-spacing:4px;
+}
+
+.topo p{
+    color:#d8d8d8;
+    line-height:1.7;
+    max-width:700px;
+    margin:auto;
+}
+
+.botao{
+    display:inline-block;
+    margin-top:35px;
+    padding:14px 35px;
+    border:1px solid #fff;
+    border-radius:40px;
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.botao:hover{
+    background:#fff;
+    color:#000;
+}
+
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    margin-bottom:25px;
+    font-size:40px;
+}
+
+
+.sobre{
+    background:#0f0f0f;
+}
+
+.sobre p{
+    line-height:1.9;
+    color:#c7c7c7;
+    max-width:900px;
+}
+
+
+.lista-albuns{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:40px;
+}
+
+.album{
+    background:#111;
+    border:1px solid #2b2b2b;
+    width:300px;
+    border-radius:14px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.album:hover{
+    transform:translateY(-6px);
+}
+
+.album img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.album h3{
+    padding:20px 20px 10px;
+}
+
+.album p{
+    padding:0 20px 25px;
+    color:#bcbcbc;
+    line-height:1.6;
+}
+
+
+
+.videos{
+    background:#0d0d0d;
+}
+
+.grade-videos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+iframe{
+    width:100%;
+    height:230px;
+    border:none;
+    border-radius:10px;
+}
+
+
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#777;
+    border-top:1px solid #1f1f1f;
+}
+
+.nav-voltar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.btn-voltar {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid #1f1f1f; 
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.btn-voltar:hover {
+    background: #1f1f1f;
+    color: #fff;
+    transform: translateX(-5px);
+    box-shadow: 0 0 20px 1f1f1f;
+}
